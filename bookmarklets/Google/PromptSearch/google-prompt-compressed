@@ -1,0 +1,1 @@
+javascript: (function() {    function search(vard) {        return vard.selection ? vard.selection.createRange().text : vard.getSelection()    }    selection = search(document);    selection = prompt('What would you like to search? (Google)', '');    open('https://www.google.com/search?&q=' + (selection ? '' + encodeURIComponent(selection) : '')).focus();})();
